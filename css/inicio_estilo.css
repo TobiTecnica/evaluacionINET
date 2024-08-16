@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+.exit{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: all 0.4s ease;
+}
+.exit i{
+    font-size: 3em;
+    color:Red;
+}
+.exit:hover{
+    transform: scale(1.1);
+}
+.inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(persona_corriendo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px); /* Aplica el desenfoque */
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+}
+
+.encabezado{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+ 
+}
+.nombre_header{
+    margin: 15px;
+    padding: 5px;
+}
+.nombre_header h1{
+    font-size: 25px; /* Tamaño del texto */
+    font-weight: 800; /* Grosor del texto */
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: cambioColor 5s infinite;
+}
+@keyframes cambioColor {
+    0% { color: #ffffff; }    /* Color inicial */
+    50% { color: #54565c; }   /* Color intermedio */
+    100% { color: #ffffff; }  /* Color final (vuelve al color inicial) */
+}
+.opciones{
+    margin-right: 10px;
+    padding: 5px;
+}
+.opciones i{
+    font-size: 25px; /* Tamaño del texto */
+    padding: 4px;
+    color:white;
+}
+
+/*
+productos
+*/
+.content_incio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.productos_title {
+    margin: 10px;
+    text-align: center;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(0, 56, 120);
+}
+.divisor_productos{
+    width: 70%;
+    border: none;
+    height: 2px;
+    background-color:rgb(135, 135, 135);
+    border-radius: 10px;
+}
+.container_productos {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el contenedor de productos */
+}
+
+.tarjetas_productos {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra las tarjetas en la línea */
+    gap: 20px; /* Añade espacio entre las tarjetas */
+}
+
+.tarjeta {
+    width: calc(33.333% - 20px); /* Ajusta el ancho para que tres tarjetas quepan en una fila con espacio para el margen */
+    height: 40vh;
+    border: 1px solid rgb(167, 167, 167);
+    box-shadow: 0px 0px 2px 1px rgb(185, 185, 185);
+    margin: 20px 0; /* Margen superior e inferior para separar las filas */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+.imagen{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 187, 187);
+}
+.imagen i{
+    font-size: 50px;
+    color: gray;
+    padding: 10px;
+}
+.detalle_producto{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+
+}
+.nombre_producto{
+    font-size: 20px;
+    font-weight: 400;
+}
+.precio_producto{
+    font-size: 20px;
+    font-weight: 400;
+}
+.agregar_carrito{
+    width: 20%;
+    background-color: rgb(7, 163, 7);
+    border: 1px solid green;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.agregar_carrito i{
+    font-size: 30px;
+    color: white;
+}
+
+/*
+filtrar 
+*/
+
+.filtros_productos{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.filtro_title{
+    font-size: 20px;
+    margin-left: 0px;
+}
+.filtrar_por{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.opcion{
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 400;
+}
+.opcion input{
+    margin-right: 0px;
+}
+/*
+fin filtro
+*/
+
+    /*
+fin productos
+*/
+.carrito{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.carrito i{
+    font-size: 2em;
+}
+/*
+
+ footer
+ 
+ */
+ .footer {
+    background-color: #d7d7d7; /* Color de fondo del footer */
+    padding: 20px;
+    border-top: 1px solid #ddd; /* Línea superior del footer */
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contact-info,
+.about-us {
+    width: 45%;
+}
+
+.contact-info h2,
+.about-us h2 {
+    margin-bottom: 10px;
+    color: rgb(0, 89, 190); /* Color del título */
+}
+
+.contact-info p,
+.about-us p {
+    margin: 5px 0;
+    color: #333; /* Color del texto */
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #666; /* Color del texto del pie de página */
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+/* Iconos FontAwesome (si estás usando la versión en línea de FontAwesome) */
+.footer i {
+    margin-right: 8px;
+}

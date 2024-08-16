@@ -1,0 +1,150 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+.exit{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: all 0.4s ease;
+}
+.exit i{
+    font-size: 3em;
+    color:Red;
+}
+.exit:hover{
+    transform: scale(1.1);
+}
+.container_principal{
+    width: 100%;
+    height: 100vh;
+}
+.container_login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.content_login{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.wave_1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: red;
+}
+
+/*
+login
+
+*/
+.login{
+    background-color: #ffffff;
+    height: 50vh;
+    width: 50vh;
+    margin: 0;
+    z-index:1;
+    border-radius: 30px;
+    border: 4px solid rgb(112, 112, 112);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 1px rgb(80, 80, 80);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+.login_name{
+    color: rgb(22, 156, 235);
+    font-size: 30px;
+}
+.login_datos{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 70%;
+    justify-content: center;
+}
+.login_nombre{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.login_nombre label{
+    width: 100%;
+}
+.login_nombre input{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 5px;
+}
+
+/*   */
+
+.login_contrasenia{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login_contrasenia label{
+    width: 100%;
+}
+
+.login_contrasenia input{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgb(207, 207, 207);    padding: 5px;
+}
+/*
+
+ fin login
+ 
+ */
+ .registrarse{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: end;
+}
+.registrarse h1{
+    font-size: 15px;
+    padding: 15px;
+    color: rgb(37, 37, 37);
+    font-weight: 400;
+}
+.registrarse a{
+    color: rgb(32, 129, 255);
+    text-align: none;
+}
+
+.enviar_datos_container{
+    width: 100%;
+}
+.enviar_datos_container input{
+    display: none;
+}
+
+.enviar_datos_ h1{
+    width: 80%;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 5px;
+    font-family: monospace;
+    background-color: rgb(23, 143, 255);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
